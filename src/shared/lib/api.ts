@@ -28,6 +28,12 @@ api.interceptors.response.use(
       return Promise.reject(error);
     }
 
+    // Don't intercept 401s from auth endpoints — they're expected (wrong credentials, etc.)
+    const url = originalRequest.url || "";
+    if (url.includes("/auth/login") || url.includes("/auth/register") || url.includes("/auth/refresh")) {
+      return Promise.reject(error);
+    }
+
     // Already retried once — give up to prevent infinite loop
     if (originalRequest._retry) {
       clearTokens();

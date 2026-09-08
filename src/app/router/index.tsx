@@ -3,6 +3,7 @@ import { HomePage } from "@/pages/home/HomePage";
 import { LoginPage } from "@/pages/login/LoginPage";
 import { RegisterPage } from "@/pages/register/RegisterPage";
 import { TeamsPage } from "@/pages/teams/TeamsPage";
+import { NotFoundPage } from "@/pages/not-found/NotFoundPage";
 import { ProtectedRoute } from "@/app/router/ProtectedRoute";
 
 export function AppRouter() {
@@ -19,6 +20,7 @@ export function AppRouter() {
           </ProtectedRoute>
         }
       />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }

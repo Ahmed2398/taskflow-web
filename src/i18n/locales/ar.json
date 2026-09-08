@@ -28,6 +28,16 @@
     "login": "تسجيل الدخول",
     "register": "إنشاء حساب"
   },
+  "error": {
+    "title": "حدث خطأ ما",
+    "description": "حدث خطأ غير متوقع. حاول إعادة تحميل الصفحة.",
+    "goHome": "العودة للرئيسية"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "الصفحة غير موجودة",
+    "goHome": "العودة للرئيسية"
+  },
   "auth": {
     "login": "تسجيل الدخول",
     "register": "إنشاء حساب",
@@ -50,6 +60,8 @@
     "nameMinLength": "يجب أن يكون الاسم حرفين على الأقل",
     "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
     "teamsPlaceholder": "الفِرق",
-    "teamsPlaceholderDescription": "ستظهر فرقك هنا في المرحلة 3"
+    "teamsPlaceholderDescription": "ستظهر فرقك هنا في المرحلة 3",
+    "loginSuccess": "مرحباً بعودتك!",
+    "registerSuccess": "تم إنشاء الحساب بنجاح!"
   }
 }

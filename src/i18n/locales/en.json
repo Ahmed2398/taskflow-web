@@ -28,6 +28,16 @@
     "login": "Login",
     "register": "Register"
   },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Try reloading the page.",
+    "goHome": "Go Home"
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Page not found",
+    "goHome": "Go Home"
+  },
   "auth": {
     "login": "Sign In",
     "register": "Sign Up",
@@ -50,6 +60,8 @@
     "nameMinLength": "Name must be at least 2 characters",
     "passwordMinLength": "Password must be at least 6 characters",
     "teamsPlaceholder": "Teams",
-    "teamsPlaceholderDescription": "Your teams will appear here in Phase 3"
+    "teamsPlaceholderDescription": "Your teams will appear here in Phase 3",
+    "loginSuccess": "Welcome back!",
+    "registerSuccess": "Account created successfully!"
   }
 }
