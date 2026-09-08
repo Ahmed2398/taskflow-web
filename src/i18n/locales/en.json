@@ -33,6 +33,23 @@
     "register": "Sign Up",
     "email": "Email",
     "password": "Password",
-    "logout": "Log Out"
+    "name": "Name",
+    "logout": "Log Out",
+    "loginTitle": "Sign In",
+    "loginDescription": "Enter your credentials to access your account",
+    "registerTitle": "Create Account",
+    "registerDescription": "Fill in your details to get started",
+    "loginButton": "Sign In",
+    "registerButton": "Sign Up",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "invalidCredentials": "Invalid email or password",
+    "emailInUse": "Email already in use",
+    "invalidEmail": "Please enter a valid email",
+    "required": "This field is required",
+    "nameMinLength": "Name must be at least 2 characters",
+    "passwordMinLength": "Password must be at least 6 characters",
+    "teamsPlaceholder": "Teams",
+    "teamsPlaceholderDescription": "Your teams will appear here in Phase 3"
   }
 }

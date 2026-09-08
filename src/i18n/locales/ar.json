@@ -33,6 +33,23 @@
     "register": "إنشاء حساب",
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
-    "logout": "تسجيل الخروج"
+    "name": "الاسم",
+    "logout": "تسجيل الخروج",
+    "loginTitle": "تسجيل الدخول",
+    "loginDescription": "أدخل بياناتك للوصول إلى حسابك",
+    "registerTitle": "إنشاء حساب",
+    "registerDescription": "أدخل بياناتك للبدء",
+    "loginButton": "تسجيل الدخول",
+    "registerButton": "إنشاء حساب",
+    "noAccount": "ليس لديك حساب؟",
+    "haveAccount": "لديك حساب بالفعل؟",
+    "invalidCredentials": "بريد إلكتروني أو كلمة مرور غير صحيحة",
+    "emailInUse": "البريد الإلكتروني مستخدم بالفعل",
+    "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+    "required": "هذا الحقل مطلوب",
+    "nameMinLength": "يجب أن يكون الاسم حرفين على الأقل",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+    "teamsPlaceholder": "الفِرق",
+    "teamsPlaceholderDescription": "ستظهر فرقك هنا في المرحلة 3"
   }
 }
