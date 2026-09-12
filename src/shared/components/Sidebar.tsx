@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams, useNavigate } from "react-router-dom";
 import { Users, FolderKanban, ChevronsUpDown, LayoutDashboard } from "lucide-react";
 import { ROUTES } from "@/shared/constants";
 import { UserMenu } from "@/shared/components/UserMenu";
 import { Separator } from "@/shared/ui/separator";
+import { Skeleton } from "@/shared/ui/skeleton";
+import { useTeams } from "@/features/teams/hooks/useTeams";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,6 +19,10 @@ import { cn } from "@/shared/lib/utils";
 export function Sidebar() {
   const { t } = useTranslation();
   const { teamId } = useParams();
+  const navigate = useNavigate();
+  const { teams, isLoading: teamsLoading } = useTeams();
+
+  const activeTeam = teams.find((tm) => tm.id === teamId);
 
   const navItems = [
     { label: t("nav.dashboard"), to: ROUTES.home, icon: LayoutDashboard, exact: true },
@@ -40,13 +46,13 @@ export function Sidebar() {
 
       <Separator />
 
-      {/* Team switcher (placeholder) */}
+      {/* Team switcher */}
       <div className="px-2 py-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <button className="flex w-full items-center justify-between rounded-md px-2 py-2 text-sm hover:bg-accent transition-colors">
-              <span className="text-muted-foreground">
-                {teamId ? t("sidebar.teamActive") : t("sidebar.noTeam")}
+              <span className="truncate text-muted-foreground">
+                {activeTeam ? activeTeam.name : t("sidebar.noTeam")}
               </span>
               <ChevronsUpDown className="h-4 w-4 text-muted-foreground" />
             </button>
@@ -54,9 +60,25 @@ export function Sidebar() {
           <DropdownMenuContent align="start" className="w-full">
             <DropdownMenuLabel>{t("sidebar.selectTeam")}</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem disabled>
-              {t("sidebar.noTeamsAvailable")}
-            </DropdownMenuItem>
+            {teamsLoading ? (
+              <div className="space-y-2 p-2">
+                <Skeleton className="h-6 w-full" />
+                <Skeleton className="h-6 w-full" />
+              </div>
+            ) : teams.length === 0 ? (
+              <DropdownMenuItem disabled>
+                {t("sidebar.noTeamsAvailable")}
+              </DropdownMenuItem>
+            ) : (
+              teams.map((team) => (
+                <DropdownMenuItem
+                  key={team.id}
+                  onClick={() => navigate(`/teams/${team.id}`)}
+                >
+                  {team.name}
+                </DropdownMenuItem>
+              ))
+            )}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

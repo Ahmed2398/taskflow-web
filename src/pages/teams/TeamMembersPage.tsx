@@ -1,12 +1,6 @@
-import { useTranslation } from "react-i18next";
+import { Navigate, useParams } from "react-router-dom";
 
 export function TeamMembersPage() {
-  const { t } = useTranslation();
-
-  return (
-    <div className="mx-auto max-w-4xl p-6">
-      <h1 className="text-2xl font-bold">{t("pages.teamMembersTitle")}</h1>
-      <p className="mt-2 text-muted-foreground">{t("pages.teamMembersDescription")}</p>
-    </div>
-  );
+  const { teamId } = useParams<{ teamId: string }>();
+  return <Navigate to={`/teams/${teamId}`} replace />;
 }
