@@ -80,6 +80,9 @@
     "email": "Email",
     "password": "Password",
     "name": "Name",
+    "phone": "Phone",
+    "title": "Job Title",
+    "titlePlaceholder": "e.g. Software Engineer",
     "logout": "Log Out",
     "loginTitle": "Sign In",
     "loginDescription": "Enter your credentials to access your account",
@@ -94,10 +97,22 @@
     "invalidEmail": "Please enter a valid email",
     "required": "This field is required",
     "nameMinLength": "Name must be at least 2 characters",
+    "titleMinLength": "Job title must be at least 2 characters",
     "passwordMinLength": "Password must be at least 6 characters",
     "teamsPlaceholder": "Teams",
     "teamsPlaceholderDescription": "Your teams will appear here in Phase 3",
     "loginSuccess": "Welcome back!",
     "registerSuccess": "Account created successfully!"
+  },
+  "profile": {
+    "title": "Profile",
+    "avatar": "Avatar",
+    "information": "Profile Information",
+    "uploadAvatar": "Upload Avatar",
+    "removeAvatar": "Remove Avatar",
+    "avatarHint": "PNG, JPEG, JPG, GIF, or WebP. Max 2MB.",
+    "avatarUpdated": "Avatar updated successfully",
+    "avatarRemoved": "Avatar removed successfully",
+    "memberSince": "Member since"
   }
 }

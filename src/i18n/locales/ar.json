@@ -80,6 +80,9 @@
     "email": "البريد الإلكتروني",
     "password": "كلمة المرور",
     "name": "الاسم",
+    "phone": "الهاتف",
+    "title": "المسمى الوظيفي",
+    "titlePlaceholder": "مثال: مهندس برمجيات",
     "logout": "تسجيل الخروج",
     "loginTitle": "تسجيل الدخول",
     "loginDescription": "أدخل بياناتك للوصول إلى حسابك",
@@ -94,10 +97,22 @@
     "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
     "required": "هذا الحقل مطلوب",
     "nameMinLength": "يجب أن يكون الاسم حرفين على الأقل",
+    "titleMinLength": "يجب أن يكون المسمى الوظيفي حرفين على الأقل",
     "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
     "teamsPlaceholder": "الفِرق",
     "teamsPlaceholderDescription": "ستظهر فرقك هنا في المرحلة 3",
     "loginSuccess": "مرحباً بعودتك!",
     "registerSuccess": "تم إنشاء الحساب بنجاح!"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "avatar": "الصورة الرمزية",
+    "information": "معلومات الملف الشخصي",
+    "uploadAvatar": "رفع الصورة الرمزية",
+    "removeAvatar": "حذف الصورة الرمزية",
+    "avatarHint": "PNG، JPEG، JPG، GIF، أو WebP. الحد الأقصى 2 ميجابايت.",
+    "avatarUpdated": "تم تحديث الصورة الرمزية بنجاح",
+    "avatarRemoved": "تم حذف الصورة الرمزية بنجاح",
+    "memberSince": "عضو منذ"
   }
 }

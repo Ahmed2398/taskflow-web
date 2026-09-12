@@ -37,6 +37,18 @@ export function RegisterForm({ onSubmit, isSubmitting, error }: RegisterFormProp
       </div>
 
       <div className="space-y-2">
+        <Label htmlFor="phone">{t("auth.phone")}</Label>
+        <Input id="phone" type="tel" placeholder="+1234567890" {...register("phone")} />
+        {errors.phone && <p className="text-sm text-destructive">{t(errors.phone.message!)}</p>}
+      </div>
+
+      <div className="space-y-2">
+        <Label htmlFor="title">{t("auth.title")}</Label>
+        <Input id="title" type="text" placeholder={t("auth.titlePlaceholder")} {...register("title")} />
+        {errors.title && <p className="text-sm text-destructive">{t(errors.title.message!)}</p>}
+      </div>
+
+      <div className="space-y-2">
         <Label htmlFor="password">{t("auth.password")}</Label>
         <Input id="password" type="password" placeholder="••••••••" {...register("password")} />
         {errors.password && <p className="text-sm text-destructive">{t(errors.password.message!)}</p>}

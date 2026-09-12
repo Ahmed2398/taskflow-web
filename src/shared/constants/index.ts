@@ -14,5 +14,6 @@ export const ROUTES = {
   teamMembers: "/teams/:teamId/members",
   project: "/projects/:projectId",
   board: "/boards/:boardId",
+  profile: "/profile",
   dashboard: "/dashboard",
 } as const;

@@ -1,8 +1,14 @@
 import { createContext } from "react";
 
 export interface User {
-  userId: string;
+  id: string;
   email: string;
+  name: string;
+  phone: string;
+  avatar: string | null;
+  title: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface AuthContextValue {
@@ -10,6 +16,7 @@ export interface AuthContextValue {
   isLoading: boolean;
   isAuthenticated: boolean;
   setTokens: (accessToken: string, refreshToken: string) => Promise<void>;
+  updateUser: (user: Partial<User>) => void;
   logout: () => void;
 }
 

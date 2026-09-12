@@ -36,6 +36,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     [],
   );
 
+  const updateUser = useCallback(
+    (partial: Partial<User>) => {
+      setUser((prev) => (prev ? { ...prev, ...partial } : prev));
+    },
+    [],
+  );
+
   const logout = useCallback(() => {
     clearTokens();
     setUser(null);
@@ -45,7 +52,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{ user, isLoading, isAuthenticated: !!user, setTokens, logout }}
+      value={{ user, isLoading, isAuthenticated: !!user, setTokens, updateUser, logout }}
     >
       {children}
     </AuthContext.Provider>

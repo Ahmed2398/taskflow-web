@@ -7,6 +7,7 @@ import { TeamDetailPage } from "@/pages/teams/TeamDetailPage";
 import { TeamMembersPage } from "@/pages/teams/TeamMembersPage";
 import { ProjectDetailPage } from "@/pages/projects/ProjectDetailPage";
 import { BoardPage } from "@/pages/boards/BoardPage";
+import { ProfilePage } from "@/pages/profile/ProfilePage";
 import { NotFoundPage } from "@/pages/not-found/NotFoundPage";
 import { ProtectedRoute } from "@/app/router/ProtectedRoute";
 import { PublicOnlyRoute } from "@/app/router/PublicOnlyRoute";
@@ -28,6 +29,7 @@ export function AppRouter() {
           <Route path="/teams/:teamId/members" element={<TeamMembersPage />} />
           <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
           <Route path="/boards/:boardId" element={<BoardPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Route>
