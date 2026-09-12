@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useLogin } from "@/features/auth/hooks/useLogin";
 import { useAuthErrorMessage } from "@/features/auth/hooks/useAuthErrorMessage";
 import { LoginForm } from "@/features/auth/components/LoginForm";
+import { AuthLayout } from "@/shared/components/AuthLayout";
 import {
   Card,
   CardContent,
@@ -22,7 +23,7 @@ export function LoginPage() {
   });
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+    <AuthLayout>
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>{t("auth.loginTitle")}</CardTitle>
@@ -38,6 +39,6 @@ export function LoginPage() {
           </p>
         </CardContent>
       </Card>
-    </div>
+    </AuthLayout>
   );
 }

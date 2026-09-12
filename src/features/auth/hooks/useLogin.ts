@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { loginRequest } from "@/features/auth/api/auth";
@@ -9,6 +9,7 @@ import type { LoginValues } from "@/features/auth/schemas/auth-schemas";
 
 export function useLogin() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { setTokens } = useAuth();
   const { t } = useTranslation();
 
@@ -17,7 +18,8 @@ export function useLogin() {
     onSuccess: async (data) => {
       await setTokens(data.accessToken, data.refreshToken);
       toast.success(t("auth.loginSuccess"));
-      navigate(ROUTES.teams);
+      const from = (location.state as { from?: { pathname: string } } | null)?.from;
+      navigate(from?.pathname || ROUTES.teams);
     },
   });
 

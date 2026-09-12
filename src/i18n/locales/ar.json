@@ -26,7 +26,26 @@
     "home": "الرئيسية",
     "dashboard": "لوحة التحكم",
     "login": "تسجيل الدخول",
-    "register": "إنشاء حساب"
+    "register": "إنشاء حساب",
+    "teams": "الفِرق",
+    "projects": "المشاريع",
+    "members": "الأعضاء"
+  },
+  "sidebar": {
+    "noTeam": "لا يوجد فريق محدد",
+    "teamActive": "الفريق الحالي",
+    "selectTeam": "اختر فريقاً",
+    "noTeamsAvailable": "لا توجد فرق متاحة بعد"
+  },
+  "pages": {
+    "teamDetailTitle": "تفاصيل الفريق",
+    "teamDetailDescription": "ستكون تفاصيل الفريق متاحة في المرحلة 4",
+    "teamMembersTitle": "أعضاء الفريق",
+    "teamMembersDescription": "سيكون أعضاء الفريق متاحين في المرحلة 4/5",
+    "projectDetailTitle": "تفاصيل المشروع",
+    "projectDetailDescription": "ستكون تفاصيل المشروع متاحة في المرحلة 5",
+    "boardTitle": "اللوحة",
+    "boardDescription": "ستكون لوحة كانبان متاحة في المرحلة 6"
   },
   "error": {
     "title": "حدث خطأ ما",
@@ -37,6 +56,23 @@
     "title": "404",
     "description": "الصفحة غير موجودة",
     "goHome": "العودة للرئيسية"
+  },
+  "dashboard": {
+    "welcome": "مرحباً بعودتك",
+    "welcomeDescription": "إليك ما يحدث في مشاريعك اليوم",
+    "taskCompletionTitle": "إنجاز المهام",
+    "taskCompletionDescription": "المهام المنشأة مقابل المنجزة هذا الأسبوع",
+    "teamActivityTitle": "نشاط الفريق",
+    "teamActivityDescription": "المهام حسب الفريق",
+    "created": "منشأة",
+    "completed": "منجزة",
+    "tasks": "المهام",
+    "stats": {
+      "teams": "الفِرق",
+      "projects": "المشاريع",
+      "completed": "المهام المنجزة",
+      "productivity": "الإنتاجية"
+    }
   },
   "auth": {
     "login": "تسجيل الدخول",

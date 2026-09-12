@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useRegister } from "@/features/auth/hooks/useRegister";
 import { useAuthErrorMessage } from "@/features/auth/hooks/useAuthErrorMessage";
 import { RegisterForm } from "@/features/auth/components/RegisterForm";
+import { AuthLayout } from "@/shared/components/AuthLayout";
 import {
   Card,
   CardContent,
@@ -22,7 +23,7 @@ export function RegisterPage() {
   });
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+    <AuthLayout>
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle>{t("auth.registerTitle")}</CardTitle>
@@ -38,6 +39,6 @@ export function RegisterPage() {
           </p>
         </CardContent>
       </Card>
-    </div>
+    </AuthLayout>
   );
 }

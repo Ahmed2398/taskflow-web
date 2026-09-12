@@ -10,5 +10,9 @@ export const ROUTES = {
   login: "/login",
   register: "/register",
   teams: "/teams",
+  teamDetail: "/teams/:teamId",
+  teamMembers: "/teams/:teamId/members",
+  project: "/projects/:projectId",
+  board: "/boards/:boardId",
   dashboard: "/dashboard",
 } as const;

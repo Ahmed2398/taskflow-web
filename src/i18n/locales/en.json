@@ -26,7 +26,26 @@
     "home": "Home",
     "dashboard": "Dashboard",
     "login": "Login",
-    "register": "Register"
+    "register": "Register",
+    "teams": "Teams",
+    "projects": "Projects",
+    "members": "Members"
+  },
+  "sidebar": {
+    "noTeam": "No team selected",
+    "teamActive": "Current team",
+    "selectTeam": "Select a team",
+    "noTeamsAvailable": "No teams available yet"
+  },
+  "pages": {
+    "teamDetailTitle": "Team Details",
+    "teamDetailDescription": "Team details will be available in Phase 4",
+    "teamMembersTitle": "Team Members",
+    "teamMembersDescription": "Team members will be available in Phase 4/5",
+    "projectDetailTitle": "Project Details",
+    "projectDetailDescription": "Project details will be available in Phase 5",
+    "boardTitle": "Board",
+    "boardDescription": "The Kanban board will be available in Phase 6"
   },
   "error": {
     "title": "Something went wrong",
@@ -37,6 +56,23 @@
     "title": "404",
     "description": "Page not found",
     "goHome": "Go Home"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "welcomeDescription": "Here's what's happening with your projects today",
+    "taskCompletionTitle": "Task Completion",
+    "taskCompletionDescription": "Tasks created vs completed this week",
+    "teamActivityTitle": "Team Activity",
+    "teamActivityDescription": "Tasks by team",
+    "created": "Created",
+    "completed": "Completed",
+    "tasks": "Tasks",
+    "stats": {
+      "teams": "Teams",
+      "projects": "Projects",
+      "completed": "Completed Tasks",
+      "productivity": "Productivity"
+    }
   },
   "auth": {
     "login": "Sign In",
